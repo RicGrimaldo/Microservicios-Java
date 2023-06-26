@@ -20,6 +20,8 @@ public class UsuarioService {
     }
 
     public List<Usuario> getAllUsuarios(){
+        System.out.println("Usuarios que hayan pagado");
+        System.out.println("Usuarios que tengan su documentacion en orden");
         return usuarioRepository.findAll();
     }
 }

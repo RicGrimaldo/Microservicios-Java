@@ -14,13 +14,28 @@ public class Usuario {
     @Column (name = "nombre")
     private String nombre;
 
-    public Usuario(int id, String nombre) {
+    @Column (name = "apellidos")
+    private String apellidos;
+
+    @Column (name = "edad")
+    private int edad;
+
+    @Column (name = "sexo")
+    private boolean sexo;
+
+    public Usuario(int id, String nombre, String apellidos, int edad, boolean sexo) {
         this.id = id;
         this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.sexo = sexo;
     }
 
-    public Usuario(String nombre) {
+    public Usuario(String nombre, String apellidos, int edad, boolean sexo) {
         this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.sexo = sexo;
     }
 
     public Usuario() {
@@ -44,9 +59,13 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario {" +
-                "id =" + id +
-                ", nombre ='" + nombre + '\'' +
-                '}';
+        String sexoString = (sexo) ? "masculino" : "femenino";
+        return "Usuario{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", edad=" + edad +
+                ", sexo=" + sexoString +
+                "}\n";
     }
 }
