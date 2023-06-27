@@ -13,7 +13,7 @@ public class LicenciaturaService {
     private LicenciaturaRepository licenciaturaRepository;
 
     public Licenciatura insertLicenciatura(Licenciatura licenciatura){
-        System.out.println("Inserta materia");
+        System.out.println("Inserta licenciatura");
         return licenciaturaRepository.save(licenciatura);
     }
 

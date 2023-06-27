@@ -20,6 +20,10 @@ public class Materia {
     @Column (name = "licenciatura")
     private String licenciatura;
 
+    @ManyToOne
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
+
     public Materia() {
     }
 
@@ -49,6 +53,10 @@ public class Materia {
 
     public void setLicenciatura(String licenciatura) { this.licenciatura = licenciatura; }
 
+    public Usuario getUsuario() { return usuario; }
+
+    public void setUsuario(Usuario usuario) { this.usuario = usuario; }
+
     @Override
     public String toString() {
         return "Materia {" +
@@ -56,6 +64,6 @@ public class Materia {
                 ", nombre de materia='" + nombre_materia + '\'' +
                 ", semestre=" + semestre +
                 ", licenciatura='" + licenciatura + '\'' +
-                "}\n";
+                "}";
     }
 }
