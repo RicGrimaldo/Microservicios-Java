@@ -1,4 +1,4 @@
-package edu.uady.academia.entity;
+package edu.uady.escolar.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package edu.uady.academia.controller;
+package edu.uady.escolar.controller;
 
 import jakarta.websocket.server.PathParam;
 import lombok.extern.log4j.Log4j2;

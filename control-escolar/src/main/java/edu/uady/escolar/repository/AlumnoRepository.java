@@ -1,6 +1,6 @@
-package edu.uady.academia.repository;
+package edu.uady.escolar.repository;
 
-import edu.uady.academia.entity.Alumno;
+import edu.uady.escolar.entity.Alumno;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AlumnoRepository extends JpaRepository<Alumno, Long> {

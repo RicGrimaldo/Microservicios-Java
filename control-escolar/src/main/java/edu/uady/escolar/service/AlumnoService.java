@@ -1,7 +1,7 @@
-package edu.uady.academia.service;
+package edu.uady.escolar.service;
 
-import edu.uady.academia.entity.Alumno;
-import edu.uady.academia.repository.AlumnoRepository;
+import edu.uady.escolar.entity.Alumno;
+import edu.uady.escolar.repository.AlumnoRepository;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
